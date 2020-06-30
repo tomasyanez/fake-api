@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
@@ -22,22 +22,25 @@ const App = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={3}>
-	  	<Grid item xs={12}>
-        	<Paper className={classes.paper}>
-				<Typography variant="h3" gutterBottom>
-					Titulo
-				</Typography>
-			</Paper>
-        </Grid>
-		<Grid item xs={12}>
-        	<Paper className={classes.paper}>
-				<MonumentsMap />
-			</Paper>
-        </Grid>
-      </Grid>
-    </div>
+	<div className={classes.root}>
+		<Grid container spacing={1}>
+			<Grid item xs={12}>
+				<Paper className={classes.paper}>
+					<Typography variant="h6" gutterBottom>
+						Prueba Monumentos
+					</Typography>
+					<Typography variant="subtitle1" gutterBottom>
+						Tomas Yañez
+					</Typography>
+				</Paper>
+			</Grid>
+			<Grid item xs={12}>
+				<Paper className={classes.paper}>
+					<MonumentsMap />
+				</Paper>
+			</Grid>
+		</Grid>
+	</div>
   );
 }
 
