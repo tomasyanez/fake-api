@@ -21,7 +21,7 @@ const MonumentsMap = () => {
 
     useEffect(() => {
         const geoJsonUrl = 'https://cswcl.github.io/fake-api/monumentos_historicos_extracto.geojson';
-        const csvUrl = 'http://cswcl.github.io/fake-api/monumentos_historicos_extracto.csv';
+        const csvUrl = 'https://cswcl.github.io/fake-api/monumentos_historicos_extracto.csv';
 
         Promise.all([fetchJson(geoJsonUrl), fetchCsv(csvUrl)]).then(values => { 
             const geoData = values[0];
